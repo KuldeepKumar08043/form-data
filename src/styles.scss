@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.center{
+    margin: 0 auto;
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .back{
+            height: 35px;
+            line-height: 1;
+        }
+    }
+}

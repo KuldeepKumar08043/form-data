@@ -1,0 +1,23 @@
+<div class="col-md-6 center" *ngIf="data">
+    <div class="header">
+        <h1 class="d-inline">Table Data</h1>
+        <a class="btn btn-secondary back" (click)="gotoHomePage()">Home page</a>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>last Name</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of data">
+                <td>{{ item.fname }}</td>
+                <td>{{ item.lname }}</td>
+                <td>{{ item.city }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
